@@ -1,0 +1,17 @@
+/*공통*/
+li{list-style: none; float:left; margin-right: 40px;}
+header{position:fixed; top: 0px; left: 0px; right: 0px;
+display:flex; justify-content: space-between; align-items: center; background-color: beige;} 
+footer{position:fixed; bottom:0px; left: 0px; right:0px;text-align: center; font-size: 9pt;}
+body{background-color:white; height:100vh; display: flex; justify-content: center; align-items: center;}
+table tr{line-height: 40px;}
+
+/*클래스*/
+.link1{text-decoration: none; color: black; padding:3px}
+.link1:hover{color:beige; background-color:black; border-radius: 5px;opacity: 0.2;}
+
+.mainpic{width: 30%; height: auto; max-width: 400px;}
+.title{margin-left: 40px; opacity: 0.5;}
+.mainpara{font-size: 13pt; margin-left:10%; text-align: center; line-height: 30px;}
+
+.insta{max-width: 40px;height: auto;}
