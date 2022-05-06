@@ -6,6 +6,7 @@ footer{position:fixed; bottom:0px; left: 0px; right:0px;text-align: center; font
 body{height:100vh; display: flex; justify-content: center; align-items: center;}
 li{list-style: none; float:left; margin-right: 40px;}
 table tr{line-height: 40px;}
+#btn{border:0; outline:o;}
 
 /*클래스*/
 .title{margin-left: 40px; opacity: 0.5;}
