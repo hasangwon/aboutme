@@ -1,19 +1,214 @@
-/*공통*/
-* { font-family: ‘Noto Sans KR’, sans-serif !important;}  
-header{position:fixed; top: 0px; left: 0px; right: 0px;
-display:flex; justify-content: space-between; align-items: center; background-color: beige;} 
-footer{position:fixed; bottom:0px; left: 0px; right:0px;text-align: center; font-size: 9pt;}
-body{height:100vh; display: flex; justify-content: center; align-items: center;}
-li{list-style: none; float:left; margin-right: 40px;}
-table tr{line-height: 40px;}
-#btn{border:0; outline:o;}
+@font-face {
+        font-family: 'SDSamliphopangche_Outline';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/SDSamliphopangche_Outline.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+}
 
-/*클래스*/
-.title{margin-left: 40px; opacity: 0.5;}
-.link1{text-decoration: none; color: black; padding:3px}
-.link1:hover{color:beige; background-color:black; border-radius: 5px; opacity: 0.2;}
+body { 
+    font-family: 'SDSamliphopangche_Outline';
+    background-color: white ; 
+}
 
-.mainpic{width: 30%; height: auto; max-width: 400px;}
-.mainpara{font-size: 13pt; margin-left:10%; text-align: center; line-height: 30px;}
+/* 프레임 */
+.frame {
+    margin: 30px 60px;
+    display: flex;
+    flex-direction: column;
+}
 
-.fpic{max-width: 40px;height: auto;}
+/*네비게이터 메뉴*/
+.navigator{
+    background-color: white;;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed; top:3px; right:30px;
+}
+
+li{
+    display: inline;
+    align-self: center;
+    margin: 0;
+    margin-right:15px;
+}
+
+ul{
+    margin:0;
+}
+
+/*사이트 이름*/
+.sitename{
+    margin:0;
+    font-size: 30px;
+}
+
+.nav-menu{
+    font-weight: 400;
+    font-size:20px;
+}
+
+/*링크*/
+a{
+    color: black;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #D3AC2B ;
+    transition: 0.3%;
+}
+
+/*대시보드*/
+.dashboard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:100px;
+}
+
+.kr-comment{
+    font-weight: 400;
+    font-size: 50px;
+}
+
+.highlight-title{
+    color: #D3AC2B;
+}
+
+.highlight-title:hover{
+    background-color: transparent;
+    -webkit-text-stroke: 1px #333D51 ;
+    transition: none;
+}
+
+.highlight{
+    color: #333D51  ;
+    -webkit-text-stroke: 1px #333D51 ;
+}
+
+.highlight:hover{
+    background-color: #CBD0D8 ;
+    transition: none;
+}
+
+.type1:hover{
+    background-color: yellow;
+}
+
+
+/*프로필 소개*/
+.profile-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 100px 100px;
+}
+
+#profile-picture{
+    width: 250px;
+    height: auto;
+    margin-right: 60px;
+}
+
+.introduction>h2{
+    margin: 0px;
+    font-size: 36px;
+}
+
+.introduction>p{
+    font-size:18px;
+    margin-bottom: 40px;
+}
+.capability{
+    font-size:20px;
+    line-height:  30px;
+
+}
+
+/*특징 value 소개*/
+.value-menu{
+    font-size:35px;
+    margin:30px 100px;
+}
+
+.value-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    margin: 10px 15px;
+    margin-top: 20px;
+}
+
+.value{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 40px;
+    align-items: center;
+}
+
+.value-icon{
+    width: 100px;
+    height: 100px;
+    padding: 15px;
+
+    border: 2px solid #CBD0D8;
+    border-radius: 100px;
+}
+
+.value-intro{
+    margin-left: 30px;
+}
+
+.value-name{
+    margin-top:0px;
+    margin-bottom:10px;
+}
+
+.value-exp{
+    font-size:17px;
+    margin:0px;
+}
+
+/*푸터*/
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact{
+    font-size: 50px;
+    font-weight: 700;
+    color: #CBD0D8;
+}
+
+.links{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 50px;
+    height: auto;
+}
+
+.text{
+    color : #D3AC2B ;
+    display: inline; vertical-align: middle;
+    border-right: .05em solid black;
+    animation:  cursor 0.2s ease infinite;
+    margin-bottom:0px;
+  }
+
+  .goupbtn {
+    font-family: 'SDSamliphopangche_Outline';
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #CBD0D8 ;
+    border:  #CBD0D8  3.5px solid;
+    position: fixed; bottom:10px; right:10px;
+    z-index: 1;
+  }

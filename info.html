@@ -1,51 +1,78 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="ko">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>하상원 자기소개</title>
-    <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
 </head>
 
-<header>
-    <h1 class="title"><a href="index.html" class="link1">Hasangwon</a></h2>
-        <ol>
-            <li><a href="index.html" class="link1" title="홈">홈</a></li>
-            <li><a href="info.html" class="link1" title="정보">정보</a></li>
-            <li><a href="intro.html" class="link1" title="자기소개">자기소개</a></li>
-        </ol>
-</header>
-
 <body>
-    <img src="file/pic.jpeg" class="mainpic">
-    <table class="mainpara">
-        <tr>
-            <td>이름 :</td>
-            <td><b>하상원</b></td>
-        </tr>
-        <tr>
-            <td>성별 :</td>
-            <td><b>남자</b></td>
-        </tr>        
-        <tr>
-            <td>생년월일 :</td>
-            <td><b>1996.03.15</b></td>
-        </tr>        
-        <tr>
-            <td>메일 :</td>
-            <td><b>sangonemore@gmail.com</b></td>
-        </tr>        
-        <tr>
-            <td>취미 :</td>
-            <td><b>여행/캠핑</b></td>
-        </tr>
-    </table>
+
+    <div class=frame>
+        <nav class="navigator">
+            <h3 class="sitename">hasangwon</h3>
+            <ul>
+                <li><a href="index.html" class="nav-menu">work</li>
+                <li><a href="info.html" class="nav-menu">info</a> </li>
+            </ul>
+        </nav>
+
+        <div class="profile-section">
+            <img id="profile-picture" src="./file/pic.jpeg">
+            <div class="introduction">
+                <h2>ABOUT ME</h2>
+                <p>기획 디ㅏㅈ인 개바 다 하는 인간 스타트업이 되도록 노력 중
+                    <br> 산업공학과 출신 UIX관점에서 제대로 된 기획을 하려고
+                    프론트엔드 공부중입니다 어도비 툴은 아직 모르지만 디자인 감각이
+                    ㅈ되비니다<br>함께해요
+                </p>
+                <h2>CAPAbility</h2>
+                <p id="capability">UX research<br>UI 프로토타이핑<br>퍼블리싱</p>
+            </div>
+        </div>
+
+        <h5 class="value-menu">MY VALUES</h5>
+ 
+        <div class="value-section">
+            <div class="value">
+                <img class="value-icon" src="./file/trip1.jpeg">
+                <div class="value-intro">
+                    <h4 class="value-name">책임감</h4>
+                    <p class="value-exp">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi unde nisi hic magnam. Qui, veniam. Atque inventore culpa nulla facilis, voluptatum voluptatem quibusdam repellendus. Soluta architecto ad dicta repudiandae laboriosam.</p>
+                </div>
+            </div>
+            <div class="value">
+                <img class="value-icon" src="./file/trip2.jpeg">
+                <div class="value-intro">
+                    <h4 class="value-name">자신감</h4>
+                    <p class="value-exp">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi unde nisi hic magnam. Qui, veniam. Atque inventore culpa nulla facilis, voluptatum voluptatem quibusdam repellendus. Soluta architecto ad dicta repudiandae laboriosam.</p>
+                </div>
+            </div>
+            <div class="value">
+                <img class="value-icon" src="./file/insta.jpeg">
+                <div class="value-intro">
+                    <h4 class="value-name">억까</h4>
+                    <p class="value-exp">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi unde nisi hic magnam. Qui, veniam. Atque inventore culpa nulla facilis, voluptatum voluptatem quibusdam repellendus. Soluta architecto ad dicta repudiandae laboriosam.</p>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <h3 class="contact">CONTACT ME</h3>
+            <div class="links">
+                <a class="blog" href="#">블로그</a>
+                <a class="github" href="#">깃헙</a>
+                <a class="insta" href="#">인스타</a>
+            </div>
+        </footer>
+
+
+    </div>
+    
 </body>
-
-<footer>
-    <a href="https://github.com/hasangwon" target="_blank"><img src="file/github.png" class="fpic"></a>
-    <a href="https://instagram.com/hasang0.0" target="_blank"><img src="file/insta.png" class="fpic"></a>
-    <p>copyright 2022, hasangwon</p>
-</footer>
-
 </html>

@@ -1,37 +1,86 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="ko">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>하상원 자기소개</title>
-    <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="all.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
 </head>
 
-<header>
-    <h1 class="title"><a href="index.html" class="link1">Hasangwon</a></h2>
-        <ol>
-            <li><a href="index.html" class="link1" title="홈">홈</a></li>
-            <li><a href="info.html" class="link1" title="정보">정보</a></li>
-            <li><a href="intro.html" class="link1" title="자기소개">자기소개</a></li> 
-        </ol>
-</header>
-
 <body>
+    <div class=frame>
+        <nav class="navigator">
+            <h3 class="sitename">hasangwon</h3>
+            <ul>
+                <li><a href="#page1" class="nav-menu">profile</li>
+                <li><a href="#page2" class="nav-menu">info</a> </li>
+            </ul>
+        </nav>
 
-    <img src="file/trip1.jpeg" class="mainpic">
-    <p class="mainpara">
-        <a href="https://wecode.co.kr/" class="link1" target="_blank">Wecode</a>
-        <strong>34기 하상원</strong>의 <br><br>자기소개 홈페이지입니다 ~!
-    </p>   
+        <div id="page1" class="dashboard">
+            <div class="intro">
+                <h1 class="text"></h1>
+             </div>
+            <h1 class="kr-comment">
+            <a class="highlight type1">WECODE 34기</a>로서<br>대단한~ 엄청난~<br><a class="highlight-title">개발자</a>가 되고 싶습니다</h1>
+        </div>
 
+        <div class="profile-section">
+            <img id="profile-picture" src="./file/pic.jpeg">
+            <div class="introduction">
+                <h2>간단소개</h2>
+                <p><b>ㄹㅇ개발자 도전 중</b>
+                    <br>한신대학교 컴퓨터공학부를 졸업했고, 타 업종 웹 개발자로 취직했다가
+                    미래가 보이지 않아 퇴사 후 다시 공부하려고 합니다
+                    <br>잘 부탁드립니다~!
+                </p>
+                <h2>해본 것</h2>
+                <p id="capability">C<br>Java<br>Kotlin<br>Python<br>MySql</p>
+            </div>
+        </div>
+
+        <div id="page2" class="value-section">      
+        <h5 class="value-menu">FAVORITE</h5>
+            <div class="value">
+                <img class="value-icon" src="./file/camp.jpg">
+                <div class="value-intro">
+                    <h4 class="value-name">캠핑</h4>
+                    <p class="value-exp">캠핑 다니는 것을 매우 좋아합니다. 무인도에서 살아남기 시리즈도 좋아하는 편이고, 캠핑장 예약에 숙련되어 티켓팅의 숙련도가 높습니다.</p>
+                </div>
+            </div>
+            <div class="value">
+                <img class="value-icon" src="./file/game.png">
+                <div class="value-intro">
+                    <h4 class="value-name">게임</h4>
+                    <p class="value-exp">게임 좋아해서 컴퓨터공학부에 지원했습니다. 비록 게임 만들기는 최악이었지만, 하는 게임은 좋아합니다. 팀플레이 게임을 좋아합니다. </p>
+                </div>
+            </div>
+            <div class="value">
+                <img class="value-icon" src="./file/food.jpg">
+                <div class="value-intro">
+                    <h4 class="value-name">맛집탐방</h4>
+                    <p class="value-exp">여행은 맛집을 찾아가는 위주로 다닐 정도로 맛집탐방을 즐겨합니다. 가장 좋아하는 건 냉면이며, 가리는 음식은 콩과 딱딱한 음식류(닭발,오돌뼈 등) 입니다.</p>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <h3 class="contact">CONTACT</h3>
+            <div class="links">
+                <a class="blog" href="https://bitcoins.tistory.com/" target="_blank"><img class="links" src="./file/tistory.png"></a>
+                <a class="github" href="https://github.com/hasangwon" target="_blank"><img class="links" src="./file/github.png"></a>
+                <a class="insta" href="https://www.instagram.com/hasang0.0/" target="_blank"><img class="links" src="./file/insta.png"></a>
+            </div>
+        </footer>
+    </div>
+    
+    <button class="goupbtn" type="button" onclick="clickme()">TOP</button>
+
+    <script type="text/javascript" src="typing.js"></script>
+    <script type="text/javascript" src="scrollTop.js"></script>
 </body>
-
-<footer>
-    <a href="https://github.com/hasangwon" target="_blank"><img src="file/github.png" class="fpic"></a>
-    <a href="https://instagram.com/hasang0.0" target="_blank"><img src="file/insta.png" class="fpic"></a>
-    <p>copyright 2022, hasangwon</p>
-</footer>
-
 </html>
